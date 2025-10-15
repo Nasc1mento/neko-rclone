@@ -11,3 +11,4 @@ podman-compose up -d
 echo "Neko is online at http://localhost:8080"
 echo "Staring Rclone config..."
 podman exec -it neko-rclone rclone config
+echo "Complete. After rclone config done, "
