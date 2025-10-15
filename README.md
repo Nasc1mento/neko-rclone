@@ -13,6 +13,15 @@ git clone https://github.com/Nasc1mento/nekoRclone
 chmod +x init.sh clear.sh wait-for-it.sh
 ```
 
+3. To init:
+```bash
+./init.sh
+```
+4. To clear:
+```bash
+./init.sh
+```
+
 ## If you are using docker, run the following commands:
 ``` bash
 sed -i 's/podman/docker/g' ./init.sh ./clear.sh
