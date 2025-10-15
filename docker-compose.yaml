@@ -11,5 +11,5 @@ services:
       NEKO_WEBRTC_NAT1TO1: ${HOST_IP}
       NEKO_MEMBER_MULTIUSER_USER_PASSWORD: "neko"
     volumes:
-      - .:/root/.config/rclone
+      - ${CONFIG_DIR}:/root/.config/rclone
 
