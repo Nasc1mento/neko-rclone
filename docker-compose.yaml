@@ -1,0 +1,15 @@
+services:
+  neko-rclone:
+    build: .
+    container_name: neko-rclone
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+      - "56000-56100:56000-56100/udp"
+    environment:
+      NEKO_WEBRTC_EPR: "56000-56100"
+      NEKO_WEBRTC_NAT1TO1: ${HOST_IP}
+      NEKO_MEMBER_MULTIUSER_USER_PASSWORD: "neko"
+    volumes:
+      - .:/root/.config/rclone
+
