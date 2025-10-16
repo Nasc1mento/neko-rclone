@@ -14,18 +14,18 @@ I created this setup because I wanted to complete the [**Rclone**](https://rclon
 ## How to use
 
 ### 1. Clone the repository
-git clone https://github.com/Nasc1mento/nekoRclone
-cd nekoRclone
+`git clone https://github.com/Nasc1mento/nekoRclone`
+`cd nekoRclone`
 
 ### 2. Make the scripts executable
-chmod +x init.sh clear.sh wait-for-it.sh
+`chmod +x init.sh clear.sh wait-for-it.sh`
 
 ### 3. Start the container
-./init.sh
+`./init.sh`
 > This script will create and run a container with Neko (Firefox) and Rclone ready to use.
 
 ### 4. Clean the container
-./clear.sh
+`./clear.sh`
 > Removes the container and cleans up any temporary files created.
 
 ---
